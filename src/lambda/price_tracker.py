@@ -51,7 +51,7 @@ def read_wishlist():
         
 def check_price_amazon(url):
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36",
+        "User-Agent": "", # to get your user agent google : my user agent 
         "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.3",
         "Accept-Encoding": "none",
         "Accept-Language": "en-US,en;q=0.8",
