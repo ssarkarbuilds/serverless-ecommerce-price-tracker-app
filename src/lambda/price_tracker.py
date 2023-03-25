@@ -11,7 +11,8 @@ def lambda_handler(event, context):
         print ('body', body)
         
         url = body['id']['S']
-        price = check_price_amazon(url)
+        # price = check_price_amazon(url) # use this if you want to add the item with current price
+        price = body['price']['N']
         name = body['name']['S']
         add_item_to_wishList(url, price, name)
     else:
